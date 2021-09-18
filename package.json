@@ -7,9 +7,13 @@
   "private": true,
   "scripts": {
     "format": "prettier -w .",
-    "build": "webpack"
+    "build:dev": "webpack",
+    "build:pro": "NODE_ENV=production webpack",
+    "push": "clasp push --force",
+    "deploy":"npm run build:pro && npm run push"
   },
   "devDependencies": {
+    "@google/clasp": "2.4.1",
     "copy-webpack-plugin": "9.0.1",
     "gas-webpack-plugin": "2.1.0",
     "prettier": "2.4.1",
