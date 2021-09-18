@@ -1,7 +1,7 @@
 {
   "name": "art-enrichment",
   "version": "0.1.0",
-  "description": "",
+  "description": "Google App Scripts for Google Sheet menu functions.",
   "author": "David J. Valles <davidtjvalles@gmail.com>",
   "license": "MIT",
   "private": true,
