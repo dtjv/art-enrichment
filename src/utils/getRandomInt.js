@@ -6,6 +6,6 @@
  * @param  {number} max Upper bound for return value.
  * @return {number}     A random integer.
  */
-export function getRandomInt(min, max) {
+export const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min)) + min
 }

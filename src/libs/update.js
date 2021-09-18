@@ -1,5 +1,6 @@
-import { flattenDeep, compact } from 'lodash'
 import { Config } from './config'
+import { flatten } from '../utils/flatten'
+import { compact } from '../utils/compact'
 
 /**
  * App to sync the list of values in a column to the list of choices in a
@@ -109,7 +110,7 @@ UpdateApp._processConfig = function (cfg) {
     .getValues()
   var listItem = UpdateApp._getItem(cfg.formID, cfg.field).asListItem()
 
-  srcValues = compact(flattenDeep(srcValues))
+  srcValues = compact(flatten(srcValues))
   listItem.setChoiceValues(srcValues)
 
   return srcValues
@@ -152,5 +153,3 @@ UpdateApp.prototype.teardown = function () {
 
   return this
 }
-
-module.exports = UpdateApp

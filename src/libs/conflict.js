@@ -1,6 +1,6 @@
-import { groupBy } from 'lodash'
 import { Course } from './course'
-import { getRandomInt } from './utils/getRandomInt'
+import { groupBy } from '../utils/groupBy'
+import { getRandomInt } from '../utils/getRandomInt'
 
 /**
  * Identifies schedule conflicts among courses listed in a spreadsheet.
