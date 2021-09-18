@@ -1,0 +1,46 @@
+{
+  "name": "ae-app",
+  "version": "1.0.1",
+  "description": "Google App Script. Builds menu to run two other App Scripts.",
+  "author": {
+    "name": "David Valles",
+    "email": "davidtjvalles@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "conflict-app": "git+https://github.com/dtjv/conflict-app.git",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-copy": "0.0.2",
+    "gulp-replace": "^0.5.4",
+    "js-utils": "git+https://github.com/dtjv/js-utils.git",
+    "mkdirp": "^0.5.1",
+    "pdc": "^0.2.2",
+    "update-app": "git+https://github.com/dtjv/update-app.git",
+    "xo": "^0.9.0"
+  },
+  "xo": {
+    "envs": [
+      "node"
+    ],
+    "space": true,
+    "rules": {
+      "no-multi-spaces": 0,
+      "no-multiple-empty-lines": 0,
+      "padded-blocks": 0,
+      "no-trailing-spaces": 0,
+      "no-nested-ternary": 0
+    },
+    "globals": [
+      "SpreadsheetApp",
+      "Browser",
+      "Logger",
+      "FormApp",
+      "HtmlService"
+    ]
+  }
+}

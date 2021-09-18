@@ -1,0 +1,44 @@
+{
+  "name": "js-utils",
+  "version": "1.0.0",
+  "description": "A simple JavaScript utility library",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo tests/**/*.js && tape tests/**/*.js | tap-spec || true",
+    "coverage": "nyc npm test && nyc report --reporter=lcov && open ./coverage/lcov-report/index.html",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "author": {
+    "name": "David Valles",
+    "email": "davidtjvalles@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "nyc": "^3.2.2",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.1",
+    "xo": "^0.9.0"
+  },
+  "config": {
+    "nyc": {
+      "exclude": [
+        "node_modules/",
+        "tests/"
+      ]
+    }
+  },
+  "xo": {
+    "env": [
+      "node"
+    ],
+    "space": true,
+    "rules": {
+      "no-multi-spaces": 0,
+      "no-multiple-empty-lines": 0,
+      "padded-blocks": 0,
+      "no-trailing-spaces": 0,
+      "no-nested-ternary": 0
+    }
+  }
+}

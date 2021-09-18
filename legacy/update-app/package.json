@@ -1,0 +1,52 @@
+{
+  "name": "update-app",
+  "version": "1.0.1",
+  "description": "A Google App Script. Sets list field choices to column values.",
+  "author": {
+    "name": "David Valles",
+    "email": "davidtjvalles@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp",
+    "test": "xo tests/**/*.js && tape tests/**/*.js | tap-spec || true",
+    "coverage": "nyc npm test && nyc report --reporter=lcov && open ./coverage/lcov-report/index.html",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "devDependencies": {
+    "copy-files": "^0.1.0",
+    "coveralls": "^2.11.4",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-replace": "^0.5.4",
+    "js-utils": "git+https://github.com/dtjv/js-utils.git",
+    "mkdirp": "^0.5.1",
+    "nyc": "^3.2.2",
+    "pdc": "^0.2.2",
+    "proxyquire": "^1.7.3",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.1",
+    "xo": "^0.9.0"
+  },
+  "xo": {
+    "envs": [
+      "node"
+    ],
+    "space": true,
+    "rules": {
+      "no-multi-spaces": 0,
+      "no-multiple-empty-lines": 0,
+      "padded-blocks": 0,
+      "no-trailing-spaces": 0,
+      "no-nested-ternary": 0
+    },
+    "globals": [
+      "SpreadsheetApp",
+      "Browser",
+      "Logger",
+      "FormApp",
+      "HtmlService"
+    ]
+  }
+}
