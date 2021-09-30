@@ -1,11 +1,11 @@
 # Art Enrichment
 
-Two custom Google Sheet menu functions. Built as a Google App Script.
+Two custom Google Sheet menu functions built as a Google App Script.
 
-> I built this project in 2015 and back then, my build and deployment step was
-> overly complex then concluded with a cut-and-paste step. Since I recently
-> discovered @google/clasp, I consolidated the original code, and employed
-> webpack to bundle and clasp to deploy.
+> I wrote this project in 2015 and back then, my build process was too complex
+> and my deployment step was cut-and-paste. Since I recently discovered
+> @google/clasp, I consolidated the original code, integrated webpack and
+> employed clasp to deploy. So much better!
 >
 > For nostalgia, I've included the original code in the `/legacy` folder.
 
